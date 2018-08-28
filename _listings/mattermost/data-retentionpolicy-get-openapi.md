@@ -1,9 +1,16 @@
+---
 swagger: "2.0"
 x-collection-name: Mattermost
-x-complete: 1
+x-complete: 0
 info:
-  title: Mattermost
-  version: 1.0.0
+  title: Mattermost API Get the data retention policy details.
+  description: |-
+    Gets the current data retention policy details from the server, including what data should be purged and the cutoff times for each data type that should be purged.
+    __Minimum server version__: 4.3
+    ##### Permissions
+    Requires an active session but no other permissions.
+  termsOfService: https://about.mattermost.com/default-terms/
+  version: 4.0.0
 host: your-mattermost-url.com
 basePath: /api/v4
 schemes:
@@ -31,3 +38,17 @@ paths:
       - Retention
       - Policy
       - Details.
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

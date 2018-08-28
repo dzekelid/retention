@@ -3,8 +3,9 @@ swagger: "2.0"
 x-collection-name: Box
 x-complete: 0
 info:
-  title: Box Get Retention Policy Assignment
-  description: Used to retrieve information about a retention policy assignment.
+  title: Box Create Retention Policy Assignment
+  description: Returns a list of all retention policy assignments associated with
+    a specified retention policy.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -135,26 +136,6 @@ paths:
       - Retention
       - Policy
       - Assignments
-  /retention_policy_assignments/{RETENTION_POLICY_ASSIGNMENT_ID}:
-    get:
-      summary: Get Retention Policy Assignment
-      description: Used to retrieve information about a retention policy assignment.
-      operationId: getRetentionPolicyAssignment
-      x-api-path-slug: retention-policy-assignmentsretention-policy-assignment-id-get
-      parameters:
-      - in: path
-        name: RETENTION_POLICY_ASSIGNMENT_ID
-      responses:
-        200:
-          description: OK
-      tags:
-      - Documents
-      - Retention
-      - Policy
-      - Assignments
-      - Retention
-      - Policy
-      - Assignment
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

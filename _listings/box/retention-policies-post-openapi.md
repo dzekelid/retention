@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Box
 x-complete: 0
 info:
-  title: Box Get Retention Policies
-  description: Retrieves all of the retention policies for the given enterprise.
+  title: Box Create Retention Policy
+  description: Used to create a new retention policy.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -26,28 +26,6 @@ paths:
         name: body
         schema:
           $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Documents
-      - Retention
-      - Policies
-    get:
-      summary: Get Retention Policies
-      description: Retrieves all of the retention policies for the given enterprise.
-      operationId: getRetentionPolicies
-      x-api-path-slug: retention-policies-get
-      parameters:
-      - in: query
-        name: created_by_user_id
-        description: A user id to filter the retention policies by
-      - in: query
-        name: policy_name
-        description: A name to filter the retention policies by
-      - in: query
-        name: policy_type
-        description: A policy type to filter the retention policies by
       responses:
         200:
           description: OK

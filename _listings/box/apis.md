@@ -7,11 +7,23 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jp
 x-kinRank: "9"
 x-alexaRank: "445"
 tags: Retention
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Box - Create Retention Policy
+  x-api-slug: retention-policies-post
+  description: Used to create a new retention policy.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policies-post-openapi.md
 - name: Box - Get Retention Policies
   x-api-slug: retention-policies-get
   description: Retrieves all of the retention policies for the given enterprise.
@@ -40,6 +52,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policiespolicy-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policiespolicy-id-get-openapi.md
+- name: Box - Update Retention Policy
+  x-api-slug: retention-policiespolicy-id-put
+  description: Used to update a retention policy.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policiespolicy-id-put-openapi.md
 - name: Box - Get Retention Policy Assignments
   x-api-slug: retention-policiespolicy-idassignments-get
   description: Returns a list of all retention policy assignments associated with
@@ -55,6 +79,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policiespolicy-idassignments-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policiespolicy-idassignments-get-openapi.md
+- name: Box - Create Retention Policy Assignment
+  x-api-slug: retention-policy-assignments-post
+  description: Returns a list of all retention policy assignments associated with
+    a specified retention policy.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/retention/master/_listings/box/retention-policy-assignments-post-openapi.md
 - name: Box - Get Retention Policy Assignment
   x-api-slug: retention-policy-assignmentsretention-policy-assignment-id-get
   description: Used to retrieve information about a retention policy assignment.
